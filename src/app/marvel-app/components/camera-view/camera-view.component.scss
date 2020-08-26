@@ -1,0 +1,24 @@
+.camera-view-container {
+    background-color: #eaf0f1f8;
+    margin-top: 10px;
+
+    .camera-view-content {
+        padding: 125px 0px;
+    }
+}
+
+.icon-btn {
+    border: 1px solid lightgrey;
+    background-color: white;
+
+    .active-icon {
+        color: rgb(98, 238, 98);
+        transform: scale(0.5);
+    }
+}
+
+.btn {
+    font-size: 12px;
+    border: 1px solid lightgrey;
+    background-color: white;
+}

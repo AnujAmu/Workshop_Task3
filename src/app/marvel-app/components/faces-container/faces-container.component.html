@@ -1,0 +1,28 @@
+<div class="container">
+    <div fxLayoutGap="2px" fxLayoutAlign="start">
+        <select matNativeControl class="dropdown">
+            <option value="1" selected>Today</option>
+            <option value="2">27/08/2018</option>
+        </select>
+        <select matNativeControl class="dropdown">
+            <option value="3" selected>All detections</option>
+            <option value="4">Some detections</option>
+        </select>
+        <button class="btn">
+            <mat-icon>refresh</mat-icon>
+        </button>
+        <button class="btn">
+            <mat-icon>vertical_align_bottom</mat-icon>
+        </button>
+    </div>
+    <mat-divider></mat-divider>
+    <div>
+        <mat-grid-list cols="{{cols | async}}" gutterSize="5px" rowHeight="160px">
+            <mat-grid-tile *ngFor="let tile of tiles" [colspan]="colspan" [rowspan]="rowspan">
+                <div class="image-box">
+                    {{tile.title}}
+                </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</div>
