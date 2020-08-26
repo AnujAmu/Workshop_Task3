@@ -2,13 +2,17 @@
     margin: 12px 0px;
 
     .mat-divider {
-        margin: 12px 0px;
+        margin: 12px 0px 5px;
     }
 
     .image-box {
         border: 1px solid lightgrey;
         width: 150px;
         height: 125px;
+    }
+
+    .filter-text {
+        margin-left: 15px;
     }
 
     .dropdown {
